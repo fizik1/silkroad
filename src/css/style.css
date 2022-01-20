@@ -107,6 +107,10 @@
 
 .nav .img img {
   border-radius: 50%;
+  background: white;
+  border-radius: 50%;
+  -webkit-box-shadow: #c4c4c4 1px 1px 1px;
+          box-shadow: #c4c4c4 1px 1px 1px;
 }
 
 .nav .img p {
@@ -923,6 +927,7 @@
   text-align: center;
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
+  cursor: pointer;
 }
 
 .panel .items .item:hover {

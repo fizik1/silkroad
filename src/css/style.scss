@@ -80,6 +80,9 @@
     .img{
         img{
             border-radius: 50%;
+            background: rgb(255, 255, 255);
+            border-radius: 50%;
+            box-shadow: rgb(196, 196, 196) 1px 1px 1px;
         }
         p{
             position: relative;
@@ -739,6 +742,7 @@
             width: 50px;
             text-align: center;
             transition-duration: 0.2s;
+            cursor: pointer;
             &:hover{
                 width: 80px;
             }
