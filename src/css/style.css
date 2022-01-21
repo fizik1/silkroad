@@ -1195,6 +1195,7 @@ h2 {
       -ms-flex-pack: end;
           justify-content: end;
   background-image: url("../img/sec-3-bg.webp");
+  color: #292929;
   background-size: contain;
   position: fixed;
   width: 100%;

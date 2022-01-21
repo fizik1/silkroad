@@ -955,6 +955,7 @@ h2{
     display: flex;
     justify-content: end;
     background-image: url('../img/sec-3-bg.webp');
+    color: #292929;
     background-size: contain;
     position: fixed;
     width: 100%;
@@ -963,7 +964,7 @@ h2{
     right: 0;
     overflow: hidden;
     transition-duration: 0.3s;
-
+ 
     
     .items{
         padding: 20px;
