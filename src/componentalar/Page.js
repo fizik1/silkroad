@@ -38,13 +38,15 @@ function Page() {
                 <h1>Gane una gran experiencia para los expertos de viajes</h1>
                 <h1>Obtenga beneficios de su FAM-Tour 2022</h1>
                 <p className='text2'>Sólo 525 €</p>
-                <p className='text3'>Reembolso del pago de FAM-Tour despues de enviar 6 viajeros</p>
-                <p className='text4'>Participe en la gira, especialmente organizada para que turoperadores y agentes de viajes de todo el mundo exploren, experimenten y observen de primera mano el destino, que se está convirtiendo rápidamente en uno de los más populares entre sus clientes.</p>
-                <div className='boxs'>
-                    <button>Marzo del 16 al 22 – 2022</button>
-                    <button>Agosto del 3 al 9 – 2022</button>
-                    <button>Junio del 8 al 14 – 2022</button>
-                    <button>Noviembre del 2 al 8 – 2022</button>
+                <div className='blok'>
+                    <p className='text3'>Reembolso del pago de FAM-Tour despues de enviar 6 viajeros</p>
+                    <p className='text4'>Participe en la gira, especialmente organizada para que turoperadores y agentes de viajes de todo el mundo exploren, experimenten y observen de primera mano el destino, que se está convirtiendo rápidamente en uno de los más populares entre sus clientes.</p>
+                    <div className='boxs'>
+                        <button>Marzo del 16 al 22 – 2022</button>
+                        <button>Agosto del 3 al 9 – 2022</button>
+                        <button>Junio del 8 al 14 – 2022</button>
+                        <button>Noviembre del 2 al 8 – 2022</button>
+                    </div>
                 </div>
             </div>
             <div className='section2'>
@@ -355,6 +357,10 @@ function Page() {
                     <div className='texts'>
                         <p>Uzbekistan, 140157, Samarcanda</p>
                         <p>Kuk Saroy 1-calle</p>
+                        <div className='responsiv'>
+                            <p>+998 (66) 231-05-48</p>
+                            <a href="#">spain@silkroaddestinations.com</a>
+                        </div>
                     </div>
                     <div className='contacts'>
                         <p>+998 (66) 231-05-48</p>
@@ -385,7 +391,7 @@ function Page() {
                     </div>
                 </div>
             </div>
-            <div className={`${open ? "nav-menu" : "active"}`} id='nav-menu'>
+            <div className={`${open ? "active" : "nav-menu"}`} id='nav-menu'>
                 <div className='items'>
                     <div className="texts">
                         <p className='text1'>¿Tiene alguna pregunta? ¡Llameme!</p>

@@ -46,6 +46,7 @@ h2{
         display: flex;
         flex-flow: column;
         justify-content: center;
+        display: none;
         img{
             width: 24px;
         }
@@ -729,6 +730,25 @@ h2{
                 font-family: Ubuntu,"sans-serif";
 
             }
+            .responsiv{
+                display: none;
+                p{
+                    color: rgb(255, 255, 255);
+                    display: flex;
+                    -webkit-box-align: center;
+                    align-items: center;
+                    font-size: 14px;
+                    margin-top: 5px;
+                }
+                a{
+                    color: rgb(255, 255, 255);
+                    display: flex;
+                    -webkit-box-align: center;
+                    align-items: center;
+                    font-size: 14px;
+                    margin-top: 5px;
+                }
+            }
         }
         .contacts{
             margin: 35px 0;
@@ -1364,5 +1384,228 @@ h2{
             display: none;
         }
     }
+    .section1{
+        position: relative;
+        padding:30px 0;
+        h1{
+            font-size: 26px;
+            width: 400px;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+        .text2{
+            font-size: 26px;
+        }
+        .blok{
+            position: absolute;
+            top: 360px;
+            margin: auto;
+            text-align: center;
+            .text3, .text4{
+                color: #171312;
+                text-shadow: rgb(171,171,171) 2px 2px 2px;
+            }
+            .boxs{
+                button{
+                    font-size: 17px;
+                    font-family: "sans-serif";
+                }
+            }
+        }
+    }
+    .section2{
+        margin-top: 250px;
+        
+        background: none;
+        .row{
+            flex-flow: column-reverse;
+            padding: 0;
+            .items{
+                width: 100%;
+                .item{
+                    h2{
+                        font-size: 17px;
+                    }
+                }
+            }
+            .video-area{
+                width: 100%;
+                margin-left: 0;
+                img{
+                    margin-bottom: 40px;
+                }
+            }
+        }.direction{
+            padding: 0;
+            .items{
+                .item{
+                    .texts{
+                        .text2{
+                            position: relative;
+                            left: -65px;
+                            margin-top: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .section3{
+        padding: 0 10%;
+        .items{
+            margin: 0;
+            .item{
+                .rasm{
+
+                    img{
+                        width: 50px;
+                        height: auto;
+                    }
+                }
+                .texts{
+                    .text1{
+                        font-size: 16.5px;
+                        padding-top: 15px;
+                    }
+                    .text2{
+                        margin-top: 20px;
+                    }
+                    .text2, .text3, .text4, .text5{
+                        font-size: 14.5px;
+                        position: relative;
+                        left: -70px;
+                    }
+                }
+            }
+        }
+    }
+    .section5{
+        .boxs{
+            .box{
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .section6{
+        padding:70px 15px;
+        .images{
+            width: 100%;
+            overflow-x: scroll;
+            .image{
+                margin: 0 10px;
+            }
+        }
+    }
+    .section9{
+        .rows{
+            justify-content: space-around;
+            .texts{
+                margin: 0;
+                .responsiv{
+                    display: block;
+                }
+            }
+            .contacts{
+                display: none;
+            }
+        }
+    }
+    .panel{
+        display: none;
+    }
 }
 
+@media (max-width:576px) {
+    .nav{
+        padding: 20px;
+        justify-content: space-between;
+        .buttons{
+            flex-flow: column;
+            padding: 0;
+        }
+    }
+    .section1{
+        padding:30px 0;
+        .blok{
+            position: absolute;
+            top: 360px;
+            margin: auto;
+            text-align: center;
+            .text3, .text4{
+                color: #171312;
+                text-shadow: rgb(171,171,171) 2px 2px 2px;
+                width: 100%;
+            }
+            .boxs{
+                button{
+                    font-size: 15px;
+                    font-family: "sans-serif";
+                    width: 300px;
+                    height: 34px;
+                    margin: auto;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    .section2{
+        margin-top: 330px;
+        padding: 0 15px;
+        .row{
+            padding: 12px;
+        }
+        .direction{
+            // padding: 12px;
+            .items{
+                .item{
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    .section3{
+        padding: 15px;
+    }
+    .carusel{
+        h2{
+            font-size: 17px;
+        }
+    }
+    .section5{
+        padding: 12px;
+        h2{
+            font-size: 17px;
+        }
+    }
+    .section7{
+        h2{
+            font-size: 13px;
+            padding: 0;
+            &::before{
+                width: 25px;
+                height: 25px;
+                top: 22px;
+            }
+        }
+        .forma{
+            margin: 28px;
+            form{
+                width: 100%;
+            }
+        }
+    }
+    .section9{
+        padding: 15px;
+        .rows{
+            flex-flow: column;
+            padding: 10px 50px;
+            img{
+                width: fit-content;
+                margin: auto;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
