@@ -1,21 +1,25 @@
 // import logo from '../img/logo.webp'
 import Image from 'react-image-webp';
 import 'boxicons'
-import React from 'react';
+import React, { useState } from "react"
 import DemoSimple from './Swepir';
 
 
 
 
-
 function Page() {
+    const [open, setOpen] = useState(false);
     return(
-        <div>
+        <div className='container'>
             <div className='nav'>
-                <Image webp={require('../img/logo.webp')}/>
+                <Image className='logo' webp={require('../img/logo.webp')}/>
                 <div className='buttons'>
                     <button className='button'>Regístrese</button>
                     <button className='button'>Reservar llamada</button>
+                </div>
+                <div className='menu'>
+                <Image className={`${open ? "img-active" : "img-deactive"}`} onClick={()=>{setOpen(false)}} webp={require('../img/menu.webp')}/>
+                <Image className={`${open ? "img-deactive" : "img-active"}`} onClick={()=>{setOpen(true )}} webp={require('../img/menu.webp')}/>
                 </div>
                 <div className="texts">
                     <p className='text1'>¿Tiene alguna pregunta? ¡Llameme!</p>
@@ -378,6 +382,21 @@ function Page() {
                     </div>
                     <div className='item twitter'>
                     <box-icon type='logo' name='twitter' color='white'></box-icon>
+                    </div>
+                </div>
+            </div>
+            <div className={`${open ? "nav-menu" : "active"}`} id='nav-menu'>
+                <div className='items'>
+                    <div className="texts">
+                        <p className='text1'>¿Tiene alguna pregunta? ¡Llameme!</p>
+                        <p className='text2'>Tel: <span>+998(66) 231-05-48</span></p>
+                        <a href="#">Email: <span> spain@silkroaddestinations.com</span></a>
+                    </div>
+                    <div className='img'>
+                        <span>
+                        <Image webp={require('../img/navbar-img-1.webp')}/>
+                        </span>
+                        <p className='img_text'>Ezoza</p>
                     </div>
                 </div>
             </div>
